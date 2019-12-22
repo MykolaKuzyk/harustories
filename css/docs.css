@@ -1,0 +1,190 @@
+/* Docs sample */
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#canvas {
+    width: 960px;
+    height: 600px;
+    margin: 100px auto;
+}
+
+#book-zoom {
+    -webkit-transition: -webkit-transform 1s;
+       -moz-transition:    -moz-transform 1s;
+        -ms-transition:     -ms-transform 1s;
+         -o-transition:      -o-transform 1s;
+            transition:         transform 1s;
+}
+
+.animated {
+    -webkit-transition: margin-left .2s ease-in-out;
+       -moz-transition: margin-left .2s ease-in-out;
+        -ms-transition: margin-left .2s ease-in-out;
+         -o-transition: margin-left .2s ease-in-out;
+            transition: margin-left .2s ease-in-out;
+}
+
+.sample-docs {
+    width: 942px;
+    height: 600px;
+    margin-top: 20px;
+}
+
+.sample-docs .page {
+    width: 471px;
+    height: 600px;
+
+    background: white;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 0 20px rgba(0,0,0,.2);
+            box-shadow: 0 0 20px rgba(0,0,0,.2);
+
+        -ms-box-shadow: 0 0 20px rgba(0,0,0,.2);
+         -o-box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.sample-docs .hard {
+    background-image: url(../pics/covers.jpg);
+}
+
+.sample-docs .p2 {
+    background-position: -471px 0;
+}
+
+.sample-docs .p18 {
+    background: -webkit-gradient(linear, left top, right top, color-stop(.95, #fff), color-stop(1, #dadada));
+    background-image: -webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:    -moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:     -ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:      -o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:         linear-gradient(left, #fff 95%, #dadada 100%);
+}
+
+.sample-docs .p19 {
+    background-position: -942px 0;
+}
+
+.sample-docs .p20 {
+    background-position: -1413px 0;
+}
+
+.sample-docs .even .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../pics/right-border.png);
+    background-repeat: repeat-y;
+    background-position: right top;
+}
+
+.sample-docs .odd .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../pics/left-border.png);
+    background-repeat: repeat-y;
+    background-position: left top;
+}
+
+.sample-docs .page-wrapper {
+    -webkit-perspective: 2000px;
+       -moz-perspective: 2000px;
+        -ms-perspective: 2000px;
+            perspective: 2000px;
+}
+
+
+.sample-docs .loader {
+    position: absolute;
+    top: 280px;
+    left: 219px;
+
+    width: 22px;
+    height: 22px;
+
+    background-image: url(../pics/loader.gif);
+}
+
+.sample-docs .shadow {
+    -webkit-transition: -webkit-box-shadow .5s;
+       -moz-transition:    -moz-box-shadow .5s;
+        -ms-transition:     -ms-box-shadow .5s;
+         -o-transition: -webkit-box-shadow .5s;
+
+    -webkit-box-shadow: 0 0 20px #ccc;
+       -moz-box-shadow: 0 0 20px #ccc;
+            box-shadow: 0 0 20px #ccc;
+
+        -ms-box-shadow: 0 0 20px #ccc;
+         -o-box-shadow: 0 0 20px #ccc;
+}
+
+.sample-docs .tabs {
+    position: relative;
+    top: -22px;
+    z-index: 1;
+
+    width: 942px;
+    height: 22px;
+}
+
+.sample-docs .tabs > div {
+    float: left;
+    width: 461px;
+    height: 22px;
+}
+
+.sample-docs .tabs .left {
+    margin-left: 10px;
+
+    text-align: left;
+}
+
+
+.sample-docs .tabs .right {
+    margin-right: 10px;
+
+    text-align: right;
+}
+
+.sample-docs .tabs a {
+    display: inline-block;
+
+    font: bold 11px arial;
+    line-height: 12px;
+
+    text-decoration: none;
+
+    color: black;
+    color: #333;
+    border-width: 5px 20px 5px 20px;
+    -webkit-border-image: url(../pics/tab-off.png) 5 20 5 20 repeat stretch;
+    text-shadow: 1px 1px 0 #ddd;
+}
+
+.sample-docs .tabs .on,
+.sample-docs .tabs .on:hover {
+    cursor: default;
+
+    -webkit-border-image: url(../pics/tab-on.png) 5 20 5 20 repeat stretch;
+}
+
+.sample-docs .tabs a:hover {
+    cursor: pointer;
+    text-decoration: none;
+
+    color: black;
+    -webkit-border-image: url(../pics/tab-hover.png) 5 20 5 20 repeat stretch;
+}
